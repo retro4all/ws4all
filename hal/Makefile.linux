@@ -1,0 +1,57 @@
+NAME	  = ws4all
+
+#WIZPATH = /usr/local/wizdev
+#BINPATH = $(WIZPATH)/bin/arm-wiz-linux-
+#BINPATH = /usr/local/gp2xdev/bin/arm-linux-
+BINPATH =
+
+CC = $(BINPATH)gcc
+CPP =  $(BINPATH)gcc -E
+CXX =  $(BINPATH)g++
+STRIP =  $(BINPATH)strip
+LD =  $(BINPATH)ld
+AR =  $(BINPATH)ar
+AS =  $(BINPATH)as
+
+#CFLAGS    = -I$(WIZPATH)/include
+CFLAGS    = `sdl-config --cflags`
+DEFINES   = -DWIZ -DMMUHACK -DDEBUG -DVERSION=\"v0.1a4\"
+INCLUDES  = -I. -I.. -I../nec 
+LIBS	  = -lSDL -lpthread -lm -lz 
+
+LDFLAGS = $(CFLAGS) -pg
+#CFLAGS    += -O3
+CFLAGS		+= -pg -Wall -Wunused
+
+DEFINES += -DPROFILE
+
+#CFLAGS += -mcpu=arm926ej-s -mtune=arm926ej-s -fsigned-char \
+	-O3 -msoft-float -ffast-math -fomit-frame-pointer -fstrict-aliasing \
+	-mstructure-size-boundary=32 -fexpensive-optimizations \
+	-fweb -frename-registers -falign-functions=16 -falign-loops -falign-labels -falign-jumps \
+	-finline -finline-functions  -fno-builtin -fsingle-precision-constant \
+	-Wall -Wno-sign-compare -Wunused -Wpointer-arith -Wcast-align -Waggregate-return -Wshadow
+	
+#CFLAGS += -mcpu=arm926ej-s -mtune=arm926ej-s -O3
+
+
+#CFLAGS += -pg
+#CFLAGS	  += -mcpu=arm920 -mtune=arm920t -O3 -fstrict-aliasing -fexpensive-optimizations -falign-functions -fweb -frename-registers -fomit-frame-pointer -ffast-math -finline -finline-functions -fno-builtin -fno-common -mstructure-size-boundary=8 -msoft-float -Wall
+#CFLAGS	  += -mcpu=arm920 -mtune=arm920t -O3 -fstrict-aliasing -fexpensive-optimizations -falign-functions -fweb -frename-registers -ffast-math -finline -finline-functions -fno-builtin -fno-common -mstructure-size-boundary=8 -msoft-float -Wall -pg
+
+#CFLAGS	  += -mcpu=arm920 -mtune=arm920t -std=c99 -O3 -fstrict-aliasing -fexpensive-optimizations -falign-functions -fweb -frename-registers -fomit-frame-pointer -ffast-math -finline -finline-functions -fno-builtin -fno-common -mstructure-size-boundary=8 -msoft-float -pedantic
+
+OBJECTS   =   ../main2.o ../ws.o ../misc.o ../nec/nec.o ../wsrom_good.o ../config.o ../unzip.o ../files.o SDL/hal.o 
+
+all: $(NAME)
+
+$(NAME): $(OBJECTS)
+	$(CC) $(LDFLAGS) $(OBJECTS) $(LIBS) -o $@
+	#$(STRIP) $(NAME)
+
+.c.o:
+	$(CC) -c $(CFLAGS) $(INCLUDES) $(DEFINES) $< -o $@
+
+clean:
+	rm -f $(OBJECTS) $(NAME)
+	rm -f *~

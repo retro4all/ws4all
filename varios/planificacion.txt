@@ -1,0 +1,12 @@
++ Tomar tiempos de referencia en GP2X de WS2X (200, 250).
+? Portar WS2X a Wiz.
+- Tomar tiempos de referencia en Wiz de WS2X (200, 250, 533, 700).
+- Comparar tiempos.
+- Portar a SDL.
+- Incorporar menú.
+- Incorporar reescalado software.
+- Incorporar savestates.
+- Incorporar marcos.
+- Lanzar primera release pública.
+- Actualizar a v0.82f.
+- Tomar tiempos de referencia en Wiz de WS2X (200, 250, 533, 700) y comparar.

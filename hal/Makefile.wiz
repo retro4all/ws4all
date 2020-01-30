@@ -1,0 +1,64 @@
+NAME	  = ws4all.gpe
+
+WIZPATH = /usr/local/wizdev
+#BINPATH = $(WIZPATH)/bin/arm-wiz-linux-
+BINPATH = /usr/local/gp2xdev/bin/arm-linux-
+
+CC = $(BINPATH)gcc
+CPP =  $(BINPATH)gcc -E
+CXX =  $(BINPATH)g++
+STRIP =  $(BINPATH)strip
+LD =  $(BINPATH)ld
+AR =  $(BINPATH)ar
+AS =  $(BINPATH)as
+
+CFLAGS    = -I$(WIZPATH)/include
+DEFINES   = -DWIZ -DARM -DMMUHACK -DUSEMARQUEES -DVERSION=\"v0.1\"
+INCLUDES  = -I. -I.. -I	-I../zlib -I../nec -I../img_headers -Iwiz/wiz_lib -Iwiz/asm
+LIBS	  = -L$(WIZPATH)/lib -lpthread -lm -lz -lpng
+
+#DEFINES		+= -DDEBUG 
+#DEFINES		+= -DPROFILE
+
+CFLAGS    += -O3
+CFLAGS    += -fno-builtin
+#CFLAGS += -g -pg
+
+#CFLAGS += -mcpu=arm926ej-s -mtune=arm926ej-s -fsigned-char \
+	-O3 -msoft-float -ffast-math -fomit-frame-pointer -fstrict-aliasing \
+	-mstructure-size-boundary=32 -fexpensive-optimizations \
+	-fweb -frename-registers -falign-functions=16 -falign-loops -falign-labels -falign-jumps \
+	-finline -finline-functions  -fno-builtin -fsingle-precision-constant \
+	-Wall -Wno-sign-compare -Wunused -Wpointer-arith -Wcast-align -Waggregate-return -Wshadow
+	
+#CFLAGS += -mcpu=arm926ej-s -mtune=arm926ej-s -O3
+
+
+
+#CFLAGS	  += -mcpu=arm920 -mtune=arm920t -O3 -fstrict-aliasing -fexpensive-optimizations -falign-functions -fweb -frename-registers -fomit-frame-pointer -ffast-math -finline -finline-functions -fno-builtin -fno-common -mstructure-size-boundary=8 -msoft-float -Wall
+#CFLAGS	  += -mcpu=arm920 -mtune=arm920t -O3 -fstrict-aliasing -fexpensive-optimizations -falign-functions -fweb -frename-registers -ffast-math -finline -finline-functions -fno-builtin -fno-common -mstructure-size-boundary=8 -msoft-float -Wall -pg
+
+#CFLAGS	  += -mcpu=arm920 -mtune=arm920t -std=c99 -O3 -fstrict-aliasing -fexpensive-optimizations -falign-functions -fweb -frename-registers -fomit-frame-pointer -ffast-math -finline -finline-functions -fno-builtin -fno-common -mstructure-size-boundary=8 -msoft-float -pedantic
+
+LDFLAGS = $(CFLAGS)
+
+OBJECTS   =   ../main.o ../ws.o ../nec/nec.o ../menu.o ../wsrom_good.o ../config.o ../unzip.o ../ezxml.o ../files.o \
+	    wiz/wiz_lib/wiz_lib.o wiz/wiz_lib/uppermem.o wiz/wiz_lib/pollux_set.o wiz/wiz_lib/sys_cacheflush.o wiz/wiz_lib/warm.o wiz/wiz_lib/minimal_image.o \
+	    wiz/asm/memcpy.o wiz/asm/memset.o wiz/asm/strlen.o wiz/asm/strncmp.o wiz/asm/memcmp.o wiz/asm/strcmp.o wiz/asm/memcpy32.o wiz/asm/memcpy16.o \
+	    wiz/hal.o
+
+all: $(NAME)
+
+$(NAME): $(OBJECTS)
+	$(CC) $(LDFLAGS) $(OBJECTS) $(LIBS) -o $@
+	#$(STRIP) $(NAME)
+
+.c.o:
+	$(CC) -c $(CFLAGS) $(INCLUDES) $(DEFINES) $< -o $@
+	
+.c.s:
+	$(CC) -c $(CFLAGS) $(INCLUDES) $(DEFINES) $< -o $@	
+
+clean:
+	rm -f $(OBJECTS) $(NAME)
+	rm -f *~

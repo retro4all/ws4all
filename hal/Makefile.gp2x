@@ -1,0 +1,41 @@
+NAME	  = ws4all.gpe
+
+#DEVKIT	 = C:/devkitGP2X
+DEVKIT	 = /usr/local/gp2xdev
+
+GP2XPATH = $(DEVKIT)/bin/arm-linux-
+
+CC = $(GP2XPATH)gcc
+CPP =  $(GP2XPATH)gcc -E
+CXX =  $(GP2XPATH)g++
+STRIP =  $(GP2XPATH)strip
+LD =  $(GP2XPATH)ld
+AR =  $(GP2XPATH)ar
+AS =  $(GP2XPATH)as
+
+CFLAGS    = -I$(DEVKIT)/include
+DEFINES   = 
+INCLUDES  = -I. -I.. -I	-I./zlib -I./nec
+LIBS	  = -L$(DEVKIT)/lib -lpthread -lm -lz -static
+
+CFLAGS    += -O3
+#CFLAGS	  += -mcpu=arm920 -mtune=arm920t -O3 -fstrict-aliasing -fexpensive-optimizations -falign-functions -fweb -frename-registers -fomit-frame-pointer -ffast-math -finline -finline-functions -fno-builtin -fno-common -mstructure-size-boundary=8 -msoft-float -Wall
+#CFLAGS	  += -mcpu=arm920 -mtune=arm920t -O3 -fstrict-aliasing -fexpensive-optimizations -falign-functions -fweb -frename-registers -ffast-math -finline -finline-functions -fno-builtin -fno-common -mstructure-size-boundary=8 -msoft-float -Wall -pg
+
+#CFLAGS	  += -mcpu=arm920 -mtune=arm920t -std=c99 -O3 -fstrict-aliasing -fexpensive-optimizations -falign-functions -fweb -frename-registers -fomit-frame-pointer -ffast-math -finline -finline-functions -fno-builtin -fno-common -mstructure-size-boundary=8 -msoft-float -pedantic
+
+OBJECTS   =   gp2x/minimal.o gp2x/cpuctrl.o gp2x/gp2x.o main.o ws.o gpu.o audio.o files.o unzip.o nec/nec.o  \
+	      gp2x/memcpy.o gp2x/memset.o gp2x/strlen.o gp2x/strncmp.o gp2x/memcmp.o gp2x/strcmp.o  gp2x/asmlib.o psp/common.o
+
+all: $(NAME)
+
+$(NAME): $(OBJECTS)
+	$(CC) $(LDFLAGS) $(OBJECTS) $(LIBS) -o $@
+	#$(STRIP) $(NAME)
+
+.c.o:
+	$(CC) -c $(CFLAGS) $(INCLUDES) $(DEFINES) $< -o $@
+
+clean:
+	rm -f $(OBJECTS) $(NAME)
+	rm -f *~

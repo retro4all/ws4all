@@ -1,0 +1,129 @@
+WS4ALL v0.1a1
+GP2X minimal library v0.B by rlyeh, (c) 2005.
+Speed: 250 Mhz, Frameskip: 4
+Patching MMU ... OK!
+[INFO] ROM: roms/Chocobo no Fushigi na Dungeon (J) [M].ws
+[INFO] Speed: 250 Mhz, Frameskip: 4
+[INFO] Frames rendered = 4510 (100%)
+[INFO] Frames displayed: 4348 (96%)
+[INFO] Average Frameskip = 0.04
+[INFO] Average FPS = 75.15 (100%).
+[INFO] CPU time: 17.66 sec.
+[INFO] GPU time: 9.74 ms * 4348 frames displayed = 42.35 sec.
+[INFO] CPU: 29.43% / GPU: 70.57%
+[INFO] Play time = 60.01 sec.
+
+Exiting...
+Init gp2x_deinit
+Cpuctrl_deinit complete
+WS4ALL v0.1a1
+GP2X minimal library v0.B by rlyeh, (c) 2005.
+Speed: 250 Mhz, Frameskip: 4
+Patching MMU ... OK!
+[INFO] ROM: roms/Final Fantasy 4 (J) [!].wsc
+[INFO] Speed: 250 Mhz, Frameskip: 4
+[INFO] Frames rendered = 4510 (100%)
+[INFO] Frames displayed: 3319 (74%)
+[INFO] Average Frameskip = 0.36
+[INFO] Average FPS = 75.15 (100%).
+[INFO] CPU time: 31.96 sec.
+[INFO] GPU time: 8.45 ms * 3319 frames displayed = 28.06 sec.
+[INFO] CPU: 53.25% / GPU: 46.75%
+[INFO] Play time = 60.01 sec.
+
+Exiting...
+Init gp2x_deinit
+Cpuctrl_deinit complete
+Using mmuhack.o
+WS4ALL v0.1a1
+GP2X minimal library v0.B by rlyeh, (c) 2005.
+Speed: 250 Mhz, Frameskip: 4
+Patching MMU ... OK!
+[INFO] ROM: roms/Guilty Gear Petit 2 (J) [!].wsc
+[INFO] Speed: 250 Mhz, Frameskip: 4
+[INFO] Frames rendered = 4509 (100%)
+[INFO] Frames displayed: 3434 (76%)
+[INFO] Average Frameskip = 0.31
+[INFO] Average FPS = 75.15 (100%).
+[INFO] CPU time: 34.01 sec.
+[INFO] GPU time: 7.57 ms * 3434 frames displayed = 25.99 sec.
+[INFO] CPU: 56.69% / GPU: 43.31%
+[INFO] Play time = 60.00 sec.
+
+Exiting...
+Init gp2x_deinit
+Cpuctrl_deinit complete
+WS4ALL v0.1a1
+GP2X minimal library v0.B by rlyeh, (c) 2005.
+Speed: 250 Mhz, Frameskip: 4
+Patching MMU ... OK!
+[INFO] ROM: roms/Guilty Gear Petit (J).wsc
+[INFO] Speed: 250 Mhz, Frameskip: 4
+[INFO] Frames rendered = 4510 (100%)
+[INFO] Frames displayed: 3036 (67%)
+[INFO] Average Frameskip = 0.49
+[INFO] Average FPS = 75.15 (100%).
+[INFO] CPU time: 40.43 sec.
+[INFO] GPU time: 6.45 ms * 3036 frames displayed = 19.58 sec.
+[INFO] CPU: 67.37% / GPU: 32.63%
+[INFO] Play time = 60.01 sec.
+
+Exiting...
+Init gp2x_deinit
+Cpuctrl_deinit complete
+WS4ALL v0.1a1
+GP2X minimal library v0.B by rlyeh, (c) 2005.
+Speed: 250 Mhz, Frameskip: 4
+Patching MMU ... OK!
+[INFO] ROM: roms/GunPey Ex (J) [!].wsc
+[INFO] Speed: 250 Mhz, Frameskip: 4
+[INFO] Frames rendered = 4509 (100%)
+[INFO] Frames displayed: 3657 (81%)
+[INFO] Average Frameskip = 0.23
+[INFO] Average FPS = 75.14 (100%).
+[INFO] CPU time: 16.92 sec.
+[INFO] GPU time: 11.78 ms * 3657 frames displayed = 43.08 sec.
+[INFO] CPU: 28.21% / GPU: 71.79%
+[INFO] Play time = 60.01 sec.
+
+Exiting...
+Init gp2x_deinit
+Cpuctrl_deinit complete
+
+Using mmuhack.o
+WS4ALL v0.1a1
+GP2X minimal library v0.B by rlyeh, (c) 2005.
+Speed: 250 Mhz, Frameskip: 4
+Patching MMU ... OK!
+[INFO] ROM: roms/One Piece - Grand Battle Swan Colloseum (J).wsc
+[INFO] Speed: 250 Mhz, Frameskip: 4
+[INFO] Frames rendered = 4509 (100%)
+[INFO] Frames displayed: 3116 (69%)
+[INFO] Average Frameskip = 0.45
+[INFO] Average FPS = 75.13 (100%).
+[INFO] CPU time: 32.03 sec.
+[INFO] GPU time: 8.98 ms * 3116 frames displayed = 27.99 sec.
+[INFO] CPU: 53.37% / GPU: 46.63%
+[INFO] Play time = 60.01 sec.
+
+Exiting...
+Init gp2x_deinit
+Cpuctrl_deinit complete
+WS4ALL v0.1a1
+GP2X minimal library v0.B by rlyeh, (c) 2005.
+Speed: 250 Mhz, Frameskip: 4
+Patching MMU ... OK!
+[INFO] ROM: roms/Saint Seiya - Ougon Densetsu Hen Perfect Edition (J).wsc
+[INFO] Speed: 250 Mhz, Frameskip: 4
+[INFO] Frames rendered = 4510 (100%)
+[INFO] Frames displayed: 4148 (92%)
+[INFO] Average Frameskip = 0.09
+[INFO] Average FPS = 75.15 (100%).
+[INFO] CPU time: 22.28 sec.
+[INFO] GPU time: 9.10 ms * 4148 frames displayed = 37.73 sec.
+[INFO] CPU: 37.13% / GPU: 62.87%
+[INFO] Play time = 60.01 sec.
+
+Exiting...
+Init gp2x_deinit
+Cpuctrl_deinit complete

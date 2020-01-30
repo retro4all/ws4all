@@ -1,0 +1,99 @@
+CORE ORIGINAL:
+--------------
+seiya.wsc (2MB)
+Speed: 200 Mhz, Frameskip: 4
+[INFO] Frames rendered = 3093.
+[INFO] Frames displayed: 618
+[INFO] Average FPS = 51.55 (85%).
+
+ggp2.wsc (4MB)
+Speed: 200 Mhz, Frameskip: 4
+[INFO] Frames rendered = 1971.
+[INFO] Frames displayed: 394
+[INFO] Average FPS = 32.84 (54%).
+
+GunPey_Ex_\(J\)_\[\!\].wsc (1MB)
+Speed: 200 Mhz, Frameskip: 4
+[INFO] Frames rendered = 3991.
+[INFO] Frames displayed: 798
+[INFO] Average FPS = 66.51 (110%).
+
+One\ Piece\ Niji\ No\ Shima\ Densetsu\ \(J\).wsc (4MB)
+Speed: 200 Mhz, Frameskip: 4
+[INFO] Frames rendered = 1925.
+[INFO] Frames displayed: 384
+[INFO] Average FPS = 32.07 (53%).
+
+Final\ Fantasy\ 4\ \(J\)\ \[\!\].wsc (4MB)
+Speed: 200 Mhz, Frameskip: 4
+[INFO] Frames rendered = 1641.
+[INFO] Frames displayed: 328
+[INFO] Average FPS = 27.33 (45%).
+
+
+CORE MODIFICADO:
+----------------
+seiya.wsc (2MB)
+Speed: 200 Mhz, Frameskip: 4
+[INFO] Frames rendered = 3491.
+[INFO] Frames displayed: 698
+[INFO] Average FPS = 58.18 (96%).
+
+ggp2.wsc (4MB)
+Speed: 200 Mhz, Frameskip: 4
+[INFO] Frames rendered = 3007.
+[INFO] Frames displayed: 601
+[INFO] Average FPS = 50.11 (83%).
+
+GunPey_Ex_\(J\)_\[\!\].wsc (1MB)
+Speed: 200 Mhz, Frameskip: 4
+[INFO] Frames rendered = 4228.
+[INFO] Frames displayed: 845
+[INFO] Average FPS = 70.47 (117%).
+
+One\ Piece\ Niji\ No\ Shima\ Densetsu\ \(J\).wsc (4MB)
+Speed: 200 Mhz, Frameskip: 4
+[INFO] Frames rendered = 3560.
+[INFO] Frames displayed: 712
+[INFO] Average FPS = 59.33 (98%).
+
+Final\ Fantasy\ 4\ \(J\)\ \[\!\].wsc (4MB)
+Speed: 200 Mhz, Frameskip: 4
+[INFO] Frames rendered = 2982.
+[INFO] Frames displayed: 596
+[INFO] Average FPS = 49.70 (82%).
+
+NUEVO PARCHE
+------------
+ggp2.wsc (4MB)
+Speed: 200 Mhz, Frameski
+[INFO] Frames rendered = 3418.
+[INFO] Frames displayed: 683
+[INFO] Average FPS = 56.97 (94%).
+
+CODIGO PSP
+-----------
+seiya.wsc (2MB)
+Speed: 200 Mhz, Frameskip: 4
+[INFO] Frames rendered = 5661.
+[INFO] Frames displayed: 1133
+[INFO] Average FPS = 94.26 (157%).
+
+ggp2.wsc (4MB)
+Speed: 200 Mhz, Frameskip: 4
+[INFO] Frames rendered = 3994.
+[INFO] Frames displayed: 799
+[INFO] Average FPS = 66.56 (110%).
+
+Chocobo\ no\ Fushigi\ na\ Dungeon\ \(J\)\ \[M\].ws
+Speed: 200 Mhz, Frameskip: 4
+[INFO] Frames rendered = 6103.
+[INFO] Frames displayed: 1221
+[INFO] Average FPS = 101.71 (169%).
+
+GunPey_Ex_\(J\)_\[\!\].wsc (1MB)
+Speed: 200 Mhz, Frameskip: 4
+[INFO] Frames rendered = 6912.
+[INFO] Frames displayed: 1383
+[INFO] Average FPS = 115.10 (191%).
+
